@@ -1,3 +1,50 @@
-p {
-  color: blue;
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  color: bisque;
+  margin-bottom: 40px;
+}
+
+.subheadings {
+  color: #80613c;
+}
+
+.about-me {
+  display: grid;
+  grid-column-start: auto;
+}
+
+.about-me-heading {
+  margin-left: 300px;
+}
+
+.about-me-text {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.projects-heading {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 40px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
 }
