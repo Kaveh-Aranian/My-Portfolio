@@ -1,17 +1,42 @@
-.header {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  color: bisque;
+body {
+  background-color: #deffe5;
+}
+
+nav {
+  height: 200px;
+  width: 200px;
+}
+
+.header-one {
+  margin-left: 200px;
+  color: #999631;
   margin-bottom: 40px;
 }
 
-.subheadings {
-  color: #80613c;
+.container {
+  display: inline-flex;
+  width: 60%;
+  height: 50px;
+  margin-left: 130px;
+}
+
+.subhead {
+  color: #685ea6;
+  height: auto;
+  width: auto;
+  display: flex;
+  display: inline-block;
+  /* border: 1px solid lightgrey; */
+  /* margin-left: 50px; */
+}
+
+#subhead-container {
+  justify-content: space-around;
+}
+
+nav img {
+  height: 200px;
+  width: 200px;
 }
 
 .about-me {
@@ -20,12 +45,12 @@
 }
 
 .about-me-heading {
-  margin-left: 300px;
+  margin-left: 200px;
 }
 
 .about-me-text {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .projects-heading {
