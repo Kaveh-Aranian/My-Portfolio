@@ -6,6 +6,8 @@
 
   --border-radius: 12px;
 
+  --font-family: "Sofia Sans", sans-serif;
+
   --font-color: #323232;
 }
 
@@ -15,7 +17,7 @@ body {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-family);
   margin: 0;
   padding: 0 var(--spacing-3);
   max-width: 900px;
@@ -26,17 +28,20 @@ body {
 
 nav {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
+  margin-bottom: 25px;
+  margin-top: -10px;
 }
 
-h2 {
-  font-family: "Sofia Sans", sans-serif;
+h1 {
+  font-size: xx-large;
   display: block;
   margin-bottom: var(--spacing-2);
 }
 
 .subheadings {
-  font-family: "Sofia Sans", sans-serif;
+  font-weight: 600;
+  font-size: large;
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -45,8 +50,6 @@ h2 {
 }
 
 .subheading {
-  text-decoration: underline;
-  color: #685ea6;
   margin: var(--spacing-1);
 }
 
@@ -54,41 +57,76 @@ li {
   display: list-item;
 }
 
+a {
+  text-decoration: none;
+  color: #407b99;
+}
+
 .header-one {
-  color: #999631;
+  color: #99222d;
+}
+
+.bio-pic {
+  border-radius: 50%;
 }
 
 .about-me {
-  display: grid;
-  grid-column-start: auto;
+  display: flex;
+  grid-column-start: span;
+  margin-bottom: 100px;
 }
 
 .about-me-heading {
-  margin-left: 200px;
+  color: #4d151a;
+  font-weight: 700;
 }
 
 .about-me-text {
-  margin-left: 200px;
+  font-size: large;
   margin-right: 200px;
+  text-justify: inter-word;
+  text-align: justify;
 }
 
 .projects-heading {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 40px;
+  color: #99222d;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+.projects {
+  display: flex;
+  margin-bottom: 50px;
   justify-content: center;
-  justify-items: center;
+}
+
+.projects-images {
+  display: inline-flex;
+  gap: 50px;
+}
+
+.project-image {
+  border-radius: 5%;
+}
+
+.languages-heading {
+  font-weight: bold;
+  color: #4d151a;
+  text-align: center;
+}
+
+.language-icon {
+  font-size: 3em;
+  width: 1.3em;
+}
+
+#csharp {
+  font-size: 2em;
+  width: 1.3em;
+}
+
+.languages-container {
+  justify-content: center;
+  display: flex;
   align-items: center;
-  align-content: center;
 }
