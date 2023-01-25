@@ -5,6 +5,7 @@
       src="https://kit.fontawesome.com/675cb83761.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,13 +23,13 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <h1 class="header-one">Kaveh's Portfolio</h1>
-      <ul class="subheadings">
-        <li class="subheading"><a href="#projects">Projects</a></li>
-        <li class="subheading"><a href="#aspirations">Aspirations</a></li>
-        <li class="subheading"><a href="#about">About</a></li>
-        <li class="subheading"><a href="#contact">Contact</a></li>
+    <nav class="header">
+      <h1 class="header-title">Kaveh's Portfolio</h1>
+      <ul class="header-menu">
+        <li class="header-menu-item"><a href="#projects">Projects</a></li>
+        <li class="header-menu-item"><a href="#aspirations">Aspirations</a></li>
+        <li class="header-menu-item"><a href="#about">About</a></li>
+        <li class="header-menu-item"><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
     <main>
@@ -61,18 +62,21 @@
         <span class="projects-images">
           <img
             class="project-image"
+            id="first-project"
             src="./resources/placeholder.jpg"
             height="200px"
             width="200px"
           />
           <img
             class="project-image"
+            id="second-project"
             src="./resources/placeholder.jpg"
             height="200px"
             width="200px"
           />
           <img
             class="project-image"
+            id="third-project"
             src="./resources/placeholder.jpg"
             height="200px"
             width="200px"
@@ -98,5 +102,6 @@
 
       <footer></footer>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
