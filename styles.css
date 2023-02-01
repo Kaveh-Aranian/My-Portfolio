@@ -51,6 +51,7 @@ h1 {
 
 .header-menu-item {
   margin: var(--spacing-1);
+  opacity: 1;
 }
 
 li {
@@ -58,6 +59,7 @@ li {
 }
 
 a {
+  opacity: 1;
   text-decoration: none;
   color: #407b99;
 }
@@ -107,6 +109,7 @@ a {
 
 .project-image {
   border-radius: 5%;
+  opacity: 1;
 }
 
 details {
